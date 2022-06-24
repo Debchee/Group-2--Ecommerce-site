@@ -1,12 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <title>Group 2 Ecommerce site</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <h1>Ecommerce site</h1>
+
+    <!-- header section -->
+    <header>
+        <!-- first nav bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark nav-main">
+            <div class="container-fluid navbar-parent">
+                <a class="navbar-brand fs-3" href="#"><span
+                        style="background-color:red; text-align:center;width:40px;color:white; border-radius: 30% 50% 30% 50%;">E</span>commerce</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+                    <div class="nav-form" style="display: inline-flex; width: 75%;">
+                        <select class="form-select search-input" aria-label="Default select example">
+                            <option selected>Find best products &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp All
+                                Categories</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <span class="input-group-text border-0 bg-danger text-white" style="height: 35px;"
+                            id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-heart text-white fs-4"></i>
+                                    <span class="badge rounded-pill badge-notification bg-white text-black">1</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-6" href="#">
+                                    <i class="fas fa-shopping-bag text-white px-2 fs-4"></i>
+                                    <span class="badge rounded-pill badge-notification bg-danger text-white">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- second navbar -->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid" style=" display: flex;">
+                <div style="border-style:none; margin-left:115px">
+                    <button width=" 50px"
+                        style=" color: black; background-color: rgb(205, 195, 195); text-transform: capitalize;"
+                        type="button" class="btn"><a style="text-decoration: none; color: black;" href="#">
+                            <i class="fas fa-bars"></i> All Categories</a></button>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fas fa-angle-down"></i></span>
+                    </button>
+                </div>
+                <div style=" align-content: space-between; margin-left:160px" class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <div style=" justify-items: center; align-content: space-between;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a style="color:black" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a style="color:black" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a style="color:black" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a style="color:black" class="nav-link active" aria-current="page" href="#">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a style="color:black" class="nav-link active" aria-current="page" href="#">Contact
+                                    Us</a>
+                            </li>
+                    </div>
+                    <button style=" margin-left: 150px; text-transform: capitalize;"
+                        class="btn btn-danger text-white ">Shop Now</button>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+
+        <div style="background-color: #FAFBFD;" class="container-fluid">
+            <div style=" width:65vw" class="card mx-auto ">
+                <div class="card-body px-0 py-0" style="background-color:#FAFBFD;">
+                    <div class="container">
+                        <div class="row row-1 p-0">
+                            <div class="col-md-4 col-12 first-column">
+                                <img src="./assets/Images/hero.jpg" width="100%" height="100%">
+                            </div>
+                            <div class="col-md-8 col-12 second-column text-center">
+                                <div style="margin-top:100px" class="text-start">
+                                    <h1 style="color:rgb(10, 10, 79)"><em>GET ALL ORIGINAL PRODUCTS</em></h1>
+                                    <p style="color:rgb(10, 10, 79)"><em>Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit.
+                                            Beatae fugit ipsam voluptatum fugiat saepe incidunt mollitia cons</em></p>
+                                    <!-- <button style=" margin-left: 200px; text-transform: capitalize;"class="btn btn-danger text-white btn-start">Shop Now</button> -->
+                                    <button type="button" style="text-transform: capitalize;"
+                                        class="btn btn-danger">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header grid section  -->
+        <div class="container mt-5 mb-5 mwrap">
+            <div class="row justify-content-between" style=" border: 2px solid yellow;">
+                <div class="content col-md-4" style="border: 1px solid blue;">
+                    <a href="#" style=" text-decoration: none">
+                        <div class="content-overlay" style="text-align: center">
+                            <div style="text-align:center;color:white; margin-top:45px">
+                                <p>Feel Better</p>
+                                <h3>Girl Jacket <br><small> From $50</small></h3>
+                                <p style=" text-decoration: none;color:white">Go Shop<i
+                                        class="fas fa-long-arrow-alt-right"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-2 col-md-4" style="border: 1px solid blue;">
+                    <a href="#" style=" text-decoration: none">
+                        <div class="content-overlay-2" style="text-align: center">
+                            <div style="text-align:center;color:white;margin-top:45px">
+                                <p>Feel Better</p>
+                                <h3>Girl Jacket <br><small> From $50</small></h3>
+                                <p style="  text-decoration: none;color:white; font-size:13px">Go Shop<i
+                                        class="fas fa-long-arrow-alt-right"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content-3 col-md-4" style="border: 1px solid green; ">
+                    <a href="#" style=" text-decoration: none">
+                        <div class="content-overlay-3" style="text-align: center">
+                            <div style="text-align:center;color:white; margin-top:45px">
+                                <p>Feel Better</p>
+                                <h3>Girl Jacket <br><small> From $50</small></h3>
+                                <p style=" text-decoration: none;color:white; font-size: 13px">Go Shop<i
+                                        class="fas fa-long-arrow-alt-right"></i></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- second grid header -->
+
+        <!-- <div class="container">
+                <div class="row">
+                  <div class="col-md">
+                    One of three columns
+                  </div>
+                  <div class="col-md">
+                    One of three columns
+                  </div>
+                  <div class="col-md">
+                    One of three columns
+                  </div>
+                </div>
+              </div> -->
+
+    </header>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
 </body>
+
 </html>

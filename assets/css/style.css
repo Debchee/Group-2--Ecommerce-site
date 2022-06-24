@@ -1,0 +1,85 @@
+/* .nav-color{
+    background-color: blue;
+} */
+
+.nav-main{
+    background-color: rgb(10, 10, 79);
+}
+.navbar-parent{
+    width:75%;
+    /* background-color: yellow; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+
+.search-input{
+    width: 75%;
+}
+.row-1{
+    /* height:70vh */
+}
+.hero-image{
+    height:400px
+}
+
+.first-column{
+    border: 2px solid red;
+    padding:0px !important
+}
+.second-column{
+    border:2px solid green
+}
+.content{
+    background-image:url('../Images/sweather.png'); 
+    /* width:100px; */
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+    width: 30%;
+
+}
+
+.content-overlay{
+    background-color: rgba(212, 24, 24, 0.8);
+    width: inherit; height:inherit;
+    display: flex; flex-direction: column; align-items:center;text-align: center;justify-content: center;
+}
+
+.content-2{
+    background-image:url('../Images/schoolbag.png'); 
+    /* width:100px; */
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;
+    width: 30%;
+
+}
+
+.content-overlay-2{
+    background-color: rgba(12, 12, 192, 0.8);
+    width: inherit; height:inherit;
+    display: flex; flex-direction: column; align-items:center;text-align: center;justify-content: center;
+    height: 100%;
+
+}
+
+.content-3{
+    background-image:url('../Images/brownflatshoe.jpg'); 
+    /* width:100px; */
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding: 0px 0px 0px 0px;
+    width: 30%;
+    
+}
+
+.content-overlay-3{
+    background-color: rgba(212, 24, 24, 0.8);
+    width: inherit; height:inherit;
+    display: flex; flex-direction: column; align-items:center;text-align: center;justify-content: center;
+    height: 100%;
+}
+.mwrap {
+    padding: 20px 140px;
+}
