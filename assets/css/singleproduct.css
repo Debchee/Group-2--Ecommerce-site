@@ -1,0 +1,53 @@
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+};
+
+.L-style{
+    color:rgb(128, 0, 128, 0.2)
+
+}
+
+.num-writeup{
+    color:purple;
+    font-size: 2rem;
+}
+
+.blackstrap{
+    border-radius: 50%;
+}
+
+.redstrap{
+    border-radius: 50%;
+}
+.greenstrap{
+    border-radius: 50%;
+}
+
+.bluestrap{
+    border-radius: 50%;
+}
+.input-num{
+    width:70px;
+
+}
+
+.border-button{
+    border-radius: 50%;
+    border: 3px solid purple;
+}
+.icon{
+    margin-right: 15px;
+}
+.button-style{
+    width:60%;
+    background-color: rgb(10, 10, 79);
+    
+    color:white;
+    height: 40px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px 4px 4px 4px
+
+}
